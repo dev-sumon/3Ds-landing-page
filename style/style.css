@@ -284,6 +284,7 @@
     padding: 1.5rem;
     box-shadow: var(--shadow);
     height: 100%;
+    margin: 10px;
   }
 
   .testimonial-header {
