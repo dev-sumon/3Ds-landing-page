@@ -123,12 +123,12 @@
     font-size: 40px;
     color: #2c347e;
   }
-  .hero .badge-accent{
+  .hero .badge-accent {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
   }
   .hero p {
     font-family: "Hind Siliguri", sans-serif;
@@ -144,6 +144,10 @@
     font-weight: 600;
     font-style: normal;
     font-size: 16px;
+  }
+  .hero .curriculum-btn {
+    color: #2c347e;
+    border: 1px solid #f1560e;
   }
   .showcase h2{
     font-family: "Hind Siliguri", sans-serif;
@@ -266,6 +270,14 @@
     font-size: 40px;
     color: #2c347e;
   }
+  .testimonials p{
+    font-family: "Hind Siliguri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #2c347ec7;
+  }
   .testimonial-card {
     background-color: white;
     border-radius: var(--border-radius);
@@ -321,6 +333,13 @@
   .countdown {
     padding: 4rem 0;
     text-align: center;
+  }
+  .countdown .badge-accent{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
   }
   .countdown h2{
     font-family: "Hind Siliguri", sans-serif;
@@ -617,7 +636,34 @@
   .faq {
     padding: 4rem 0;
   }
-
+  .faq h2{
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #2c347e;
+  }
+  .faq p {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #2c347ec7;
+  }
+  .faq .accordion .accordion-item button{
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #f1560e;
+  }
+  .faq .accordion .accordion-item .accordion-body{
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #2c347ec7;
+  }
   .accordion-button:not(.collapsed) {
     background-color: var(--light-bg);
     color: var(--primary-color);
@@ -754,5 +800,134 @@
   @media (min-width: 768px) {
     .chat-button {
       bottom: 2rem;
+    }
+  }
+  @media (min-width: 425px) {
+    .hero .badge-accent {
+      font-size: 16px;
+  }
+    .hero h1 {
+      font-size: 28px;
+    }
+    .hero p {
+      font-size: 20px;
+    }
+    .showcase h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    .showcase p {
+      font-size: 20px;
+    }
+    .features h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    .features p {
+      font-size: 20px;
+    }
+    .feature-card {
+      width: 320px;
+      margin: 0 auto;
+    }
+    .testimonials h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    .testimonials p {
+      font-size: 20px;
+    }
+    .countdown .badge-accent {
+      font-size: 16px;
+    }
+    .countdown h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    .countdown p {
+      font-size: 20px;
+    }
+    .curriculum h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    .curriculum p {
+      font-size: 20px;
+    }
+    .module-card {
+      width: 350px;
+      margin: 0 auto;
+    }
+    .curriculum h3 {
+      font-size: 26px;
+    }
+    .curriculum .module-card ul li {
+      font-size: 16px;
+    }
+    .pricing h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    .pricing p {
+      font-size: 20px;
+    }
+    .pricing .pricing-card h3 {
+      font-family: "Hind Siliguri", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 20px;
+      color: #f1560e;
+    }
+    .pricing .installment-badge p {
+      font-size: 20px;
+    }
+    .pricing .pricing-card .pricing-list h4 {
+      font-size: 20px;
+    }
+    .pricing .pricing-list ul li {
+      font-size: 20px;
+    }
+    .enrollment h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    .enrollment p {
+      font-size: 20px;
+    }
+    .enrollment .enrollment-icon i {
+      font-size: 45px;
+    }
+    .enrollment-icon {
+      width: 65px;
+      height: 65px;
+      margin-right: 15px;
+  }
+    .enrollment .enrollment-feature p {
+      font-size: 18px;
+  }
+    .enrollment .enrollment-feature h3 {
+      font-size: 26px;
+    }
+    .mobile-cta a{
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 16px;
+    }
+    .faq h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    .faq p {
+      font-size: 20px;
+    }
+    .faq .accordion .accordion-item button {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .faq .accordion .accordion-item .accordion-body {
+      font-weight: 400;
+      font-size: 16px;
     }
   }
