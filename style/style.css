@@ -110,7 +110,21 @@
   .nav-link:hover {
     color: var(--accent-color);
   }
-
+  /* offer limit */
+  .offer_limit{
+    background-color: #2c347e;
+    padding: 20px 0px;
+  }
+  .offer_limit .timer-box {
+    background-color: #f1560e;
+    color: white;
+    border-radius: var(--border-radius);
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
+  .offer_limit p{
+    margin: 0px;
+  }
   /* Hero Section */
   .hero {
     padding: 4rem 0;
@@ -147,7 +161,7 @@
   }
   .hero .curriculum-btn {
     color: #2c347e;
-    border: 1px solid #f1560e;
+    border: 1px solid #2c347e;
   }
   .showcase h2{
     font-family: "Hind Siliguri", sans-serif;
@@ -163,11 +177,11 @@
     font-size: 22px;
   }
   .badge-accent {
-    background-color: var(--accent-color);
+    background-color: #2c347e;
     color: white;
     font-size: 0.75rem;
     padding: 0.35rem 0.75rem;
-    border-radius: 50rem;
+    border-radius: 7px;
     margin-bottom: 1rem;
     display: inline-block;
   }
@@ -225,12 +239,14 @@
     text-align: center;
     padding: 1.5rem;
     border: 1px solid #eee;
-    border-top: 4px solid var(--accent-color);
+    border-top: 5px solid var(--accent-color);
+    border-left: 1px solid #2c347e;
+    border-right: 1px solid #2c347e;
+    border-bottom: 1px solid #2c347e;
     border-radius: var(--border-radius);
     height: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-
   .feature-icon {
     width: 3rem;
     height: 3rem;
@@ -551,7 +567,7 @@
     font-size: 16px;
   }
   /* Enrollment */
-  .enrollment {
+  /* .enrollment {
     padding: 4rem 0;
     background-color: var(--light-bg);
   }
@@ -588,6 +604,7 @@
     font-style: normal;
     font-size: 40px;
     color: #2c347e;
+    text-align: center;
   }
   .enrollment p {
     font-family: "Hind Siliguri", sans-serif;
@@ -631,8 +648,233 @@
   .enrollment .enrollment-form .form-control:focus{
     outline: none !important;
     border: 1px solid #f1560e;
-    box-shadow: none;
-  }
+    box-shadow: none; 
+  }*/
+  .enrollment {
+    /* background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+    background-color: #2c347e;
+}
+
+  .enrollment .container {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.enrollment .container::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.enrollment .container::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.enrollment .left-section {
+    flex: 1;
+    padding: 50px 40px;
+    position: relative;
+    z-index: 1;
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2c347e;
+}
+
+.enrollment .right-section {
+    flex: 1;
+    padding: 50px 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.enrollment .left-section h1 {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+.enrollment .left-section h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    /* background: #ff9a8b; */
+    border-radius: 2px;
+}
+
+.enrollment .left-section p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.enrollment .left-section .offer-box {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    margin-top: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.enrollment .left-section .offer-box:hover {
+    transform: translateY(-5px);
+}
+
+.enrollment .left-section .clock-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ff9a8b 0%, #ff6a88 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    box-shadow: 0 5px 15px rgba(255, 106, 136, 0.4);
+}
+
+.enrollment .left-section .clock-icon i {
+    color: white;
+    font-size: 28px;
+}
+
+.enrollment .left-section .offer-text h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.enrollment .left-section .offer-text p {
+    color: #ffcc80;
+    margin: 0;
+    font-weight: 500;
+}
+
+.enrollment .right-section .form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.enrollment .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.enrollment .right-section .form-group input {
+    width: 100%;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.enrollment .right-section .form-group input:focus {
+    outline: none;
+    border-color: #764ba2;
+    box-shadow: 0 5px 15px rgba(118, 75, 162, 0.2);
+    transform: translateY(-2px);
+}
+
+.enrollment button {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #2c347e 0%, #f1560e 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 106, 136, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+  .enrollment button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+  .enrollment button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 106, 136, 0.4);
+}
+
+  .enrollment button:hover::before {
+    left: 100%;
+}
+
+.enrollment .decoration {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 0;
+}
+
+.enrollment .decoration-1 {
+    top: -50px;
+    right: 20%;
+}
+
+.enrollment .decoration-2 {
+    bottom: -70px;
+    left: 10%;
+}
   /* FAQ */
   .faq {
     padding: 4rem 0;
@@ -656,14 +898,14 @@
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
-    color: #f1560e;
+    color: #2c347ec7;
   }
   .faq .accordion .accordion-item .accordion-body{
     font-family: "Hind Siliguri", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    color: #2c347ec7;
+    color: #f1560e;
   }
   .accordion-button:not(.collapsed) {
     background-color: var(--light-bg);
@@ -752,7 +994,21 @@
     z-index: 1000;
     display: none;
   }
-
+  @media (max-width: 900px) {
+    .enrollment .container {
+        flex-direction: column;
+        max-width: 500px;
+    }
+    .enrollment .left-section {
+      margin-top: 12px;
+      border-radius: 5px;
+      clip-path: none;
+      padding: 40px 30px;
+    }
+    .enrollment .right-section {
+        padding: 40px 30px;
+    }
+}
   @media (max-width: 767.98px) {
     .mobile-cta {
       display: block;
@@ -891,9 +1147,11 @@
     .enrollment h2 {
       font-size: 32px;
       line-height: 48px;
+      text-align: center;
     }
     .enrollment p {
       font-size: 20px;
+      text-align: center;
     }
     .enrollment .enrollment-icon i {
       font-size: 45px;
