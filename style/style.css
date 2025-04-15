@@ -1273,5 +1273,8 @@
     .footer-logo {
       font-weight: 700;
       justify-content: center;
-  }
+    }
+    .offer_limit .offer .timer-box {
+      padding: 10px 0px;
+    }
   }
