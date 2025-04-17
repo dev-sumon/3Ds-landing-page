@@ -232,14 +232,29 @@
 
   /* Features Section */
   .features {
+    position: relative;
     padding: 4rem 0;
+    background-image: url(../images/WhatsApp.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .features .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(44 52 126 / 65%);
+    z-index: 1;
   }
   .features h2 {
     font-family: "Hind Siliguri", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 40px;
-    color: #2c347e;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
   }
   .features p {
     font-family: "Hind Siliguri", sans-serif;
@@ -247,20 +262,24 @@
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
-    color: #2c347ec7;
+    color: #fff;
+    position: relative;
+    z-index: 2;
   }
   .feature-card {
     text-align: center;
     padding: 1.5rem;
     border: 1px solid #eee;
-    border-top: 5px solid #2c347e;
-    border-left: 1px solid #2c347e;
-    border-right: 1px solid #2c347e;
-    border-bottom: 1px solid #2c347e;
+    border-top: 5px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     border-radius: var(--border-radius);
     height: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+    position: relative;
+    z-index: 2;
+}
   .feature-icon {
     width: 3rem;
     height: 3rem;
@@ -273,20 +292,24 @@
     color: var(--primary-color);
     font-size: 32px;
   }
-  .features .feature-card h3{
+  .features .feature-card h3 {
     font-family: "Hind Siliguri", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 22px;
     color: #f1560e;
-  }
+    position: relative;
+    z-index: 2;
+}
   .features .feature-card p {
     font-family: "Hind Siliguri", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
-    color: #2c347e;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
   }
   /* Testimonials */
   .testimonials {
