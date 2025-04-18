@@ -206,6 +206,21 @@
   .course_banner{
     margin: 4rem 0;
   }
+  .course_banner .section-title{
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #2c347e;
+  }
+  .section-subtitle .section-subtitle{
+    font-family: "Hind Siliguri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #2c347ec7;
+  }
   /* Showcase Section */
   .showcase {
     background-color: var(--primary-color);
