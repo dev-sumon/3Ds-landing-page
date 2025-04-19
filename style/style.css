@@ -142,14 +142,18 @@
   /* Hero Section */
   .hero {
     padding: 4rem 0;
-    background: linear-gradient(to bottom, var(--light-bg), white);
+    /* background: linear-gradient(to bottom, var(--light-bg), white); */
+    background-color: #2c347e;
+  }
+  .hero .main{
+    background-color: #2c347e;
   }
   .hero h1 {
     font-family: "Hind Siliguri", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 40px;
-    color: #2c347e;
+    color: #fff;
   }
   .hero .badge-accent {
     font-family: "Montserrat", sans-serif;
@@ -164,7 +168,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
-    color: #2c347ec7;
+    color: #fff;
   }
   .hero a{
     font-family: "Montserrat", sans-serif;
@@ -191,15 +195,32 @@
     font-size: 22px;
   }
   .badge-accent {
-    background-color: #2c347e;
-    color: white;
+    background-color: #fff;
+    color: #2c347e;
     font-size: 0.75rem;
     padding: 0.35rem 0.75rem;
     border-radius: 7px;
     margin-bottom: 1rem;
     display: inline-block;
   }
-
+  .course_banner{
+    margin: 4rem 0;
+  }
+  .course_banner .section-title{
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #2c347e;
+  }
+  .section-subtitle .section-subtitle{
+    font-family: "Hind Siliguri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #2c347ec7;
+  }
   /* Showcase Section */
   .showcase {
     background-color: var(--primary-color);
@@ -220,7 +241,7 @@
 
   .showcase-item img {
     width: 100%;
-    height: auto;
+    height: 1280px;
     aspect-ratio: 4/3;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -229,14 +250,14 @@
   .showcase-item:hover img {
     transform: scale(1.05);
   }
-
   /* Features Section */
   .features {
     position: relative;
     padding: 4rem 0;
-    background-image: url(../images/WhatsApp.jpeg);
-    background-size: cover;
-    background-position: center;
+    /* background-image: url(../images/WhatsApp.jpeg); */
+    /* background-size: cover;
+    background-position: center; */
+    background-color: #ffffff;
   }
   .features .overlay {
     position: absolute;
@@ -244,7 +265,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgb(44 52 126 / 65%);
+    background-color: rgba(0, 0, 0, 0.5); /* 0.5 মানে ৫০% অপাসিটি */
     z-index: 1;
   }
   .features h2 {
@@ -252,9 +273,7 @@
     font-weight: 700;
     font-style: normal;
     font-size: 40px;
-    color: #ffffff;
-    position: relative;
-    z-index: 2;
+    color: #2c347e;
   }
   .features p {
     font-family: "Hind Siliguri", sans-serif;
@@ -262,24 +281,20 @@
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
-    color: #fff;
-    position: relative;
-    z-index: 2;
+    color: #2c347ec7;
   }
   .feature-card {
     text-align: center;
     padding: 1.5rem;
     border: 1px solid #eee;
-    border-top: 5px solid #fff;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-top: 5px solid #2c347e;
+    border-left: 1px solid #2c347e;
+    border-right: 1px solid #2c347e;
+    border-bottom: 1px solid #2c347e;
     border-radius: var(--border-radius);
     height: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 2;
-}
+  }
   .feature-icon {
     width: 3rem;
     height: 3rem;
@@ -292,24 +307,20 @@
     color: var(--primary-color);
     font-size: 32px;
   }
-  .features .feature-card h3 {
+  .features .feature-card h3{
     font-family: "Hind Siliguri", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 22px;
     color: #f1560e;
-    position: relative;
-    z-index: 2;
-}
+  }
   .features .feature-card p {
     font-family: "Hind Siliguri", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
-    color: #ffffff;
-    position: relative;
-    z-index: 2;
+    color: #2c347e;
   }
   /* Testimonials */
   .testimonials {
