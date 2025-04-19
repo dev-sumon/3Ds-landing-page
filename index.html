@@ -320,7 +320,10 @@
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/yv4JU_qCJ1o?si=9RnowQWEAGWee1k4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yv4JU_qCJ1o?si=9RnowQWEAGWee1k4"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
             <div class="item">
@@ -901,7 +904,7 @@
       });
     });
   </script>
-  <script>
+  <!-- <script>
     $('.owl-carousel').owlCarousel({
       loop: true,
       margin: 10,
@@ -920,7 +923,41 @@
         }
       }
     })
+  </script> -->
+  <script>
+    $(document).ready(function () {
+      var owl = $('.owl-carousel');
+  
+      owl.owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: false,
+        autoplayTimeout: 1000,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 2
+          }
+        }
+      });
+  
+      // Slide পরিবর্তন হলে ভিডিও pause করার অংশ
+      owl.on('changed.owl.carousel', function(event) {
+        $('.owl-carousel .item iframe').each(function () {
+          var src = $(this).attr('src');
+          $(this).attr('src', src); // আবার src সেট করলে ভিডিও থেমে যায়
+        });
+      });
+    });
   </script>
+  
+
 </body>
 
 </html>
