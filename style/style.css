@@ -213,7 +213,18 @@
     font-size: 40px;
     color: #2c347e;
   }
-  .section-subtitle .section-subtitle{
+  .course_banner .button{
+    text-align: center;
+  }
+  .course_banner .button a{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 2rem;
+  }
+  .course_banner .section-subtitle{
     font-family: "Hind Siliguri", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -399,13 +410,20 @@
     padding: 4rem 0;
     text-align: center;
   }
-  .countdown .badge-accent{
+  .countdown .badge-accent {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-size: 18px;
-  }
+    background-color: #2c347e;
+    color: #fff;
+    /* font-size: 0.75rem; */
+    /* padding: 0.35rem 0.75rem; */
+    /* border-radius: 7px; */
+    /* margin-bottom: 1rem; */
+    /* display: inline-block; */
+}
   .countdown h2{
     font-family: "Hind Siliguri", sans-serif;
     font-weight: 700;
