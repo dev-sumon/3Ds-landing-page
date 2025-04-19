@@ -908,11 +908,13 @@
     color: white;
     font-size: 28px;
 }
-
+.enrollment .left-section .offer-box {
+  background-color: #fff;
+}
 .enrollment .left-section .offer-text h3 {
     font-size: 22px;
     margin-bottom: 5px;
-    color: white;
+    color: #2c347e;
 }
 
 .enrollment .left-section .offer-text p {
@@ -1348,4 +1350,19 @@
     .offer_limit .offer .timer-box {
       padding: 10px 0px;
     }
+  }
+  @media (max-width: 575px){
+    .enrollment button {
+      padding: 15px;
+  }
+  }
+  @media (max-width: 424.98px){
+    .enrollment .left-section .offer-box {
+      padding: 10px 10px 10px 5px;
+   }
+   .enrollment .left-section .clock-icon {
+    width: 48px;
+    height: 40px;
+  }
+
   }
